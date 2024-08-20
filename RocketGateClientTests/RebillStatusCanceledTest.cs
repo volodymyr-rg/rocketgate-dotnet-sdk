@@ -98,7 +98,7 @@ class RebillStatusCanceledTest : BaseTestCase
         else
         {
             Assert.That(
-                response.Get(GatewayResponse.REASON_CODE), Is.EqualTo("" + GatewayCodes.REASON_NO_ACTIVE_MEMBERSHIP),
+                response.GetInteger(GatewayResponse.REASON_CODE), Is.EqualTo(GatewayCodes.REASON_NO_ACTIVE_MEMBERSHIP),
                 "Canceled subscription"
             );
         }

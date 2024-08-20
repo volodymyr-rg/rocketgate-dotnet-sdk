@@ -95,8 +95,8 @@ class ThreeDSecureTwoTest : BaseTestCase
         //	Perform the BIN intelligence transaction
         //
         service.PerformPurchase(request, response);
-        string reason_code = response.Get(GatewayResponse.REASON_CODE);
-        Assert.That(reason_code == "225", Is.True,
+        int reason_code = response.GetInteger(GatewayResponse.REASON_CODE);
+        Assert.That(reason_code == GatewayCodes.REASON_3DSECURE_INITIATION, Is.True,
             "Perform BIN intelligence"
         );
 
@@ -116,8 +116,8 @@ class ThreeDSecureTwoTest : BaseTestCase
         //
         service.PerformPurchase(request, response);
 
-        reason_code = response.Get(GatewayResponse.REASON_CODE);
-        Assert.That(reason_code == "202", Is.True,
+        reason_code = response.GetInteger(GatewayResponse.REASON_CODE);
+        Assert.That(reason_code == GatewayCodes.REASON_3DSECURE_AUTHENTICATION_REQUIRED, Is.True,
             "Perform 3D Lookup"
         );
 
