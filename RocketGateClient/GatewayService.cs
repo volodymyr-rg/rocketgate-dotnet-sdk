@@ -1052,7 +1052,7 @@ public class GatewayService
 		//
 		//		Apply the transaction type to the request.
 		//
-		request.Set(GatewayRequest.TRANSACTION_TYPE, "GENERATEXSELL");
+		request.Set(GatewayRequest.TRANSACTION_TYPE, TRANSACTION_GENERATE_XSELL);
 		request.Set(GatewayRequest.REFERENCE_GUID, request.Get(GatewayRequest.XSELL_REFERENCE_XACT));
 		if (request.Get(GatewayRequest.REFERENCE_GUID) != null)
 		{
@@ -1255,5 +1255,6 @@ public class GatewayService
 	private static readonly string TRANSACTION_REBILL_CANCEL = "REBILL_CANCEL";
 	private static readonly string TRANSACTION_LOOKUP = "LOOKUP";
 	private static readonly string TRANSACTION_CARD_UPLOAD = "CARDUPLOAD";
+	private static readonly string TRANSACTION_GENERATE_XSELL = "GENERATEXSELL";
 
 }

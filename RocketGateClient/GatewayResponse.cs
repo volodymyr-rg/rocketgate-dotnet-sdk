@@ -173,7 +173,7 @@ public class GatewayResponse
 //
 		catch(Exception ex) {				// Parsing problem?
 			Set(EXCEPTION, ex.Message);
-			SetResults(GatewayCodes.RESPONSE_SYSTEM_ERROR,
+			SetResults(GatewayCodes.RESPONSE_REQUEST_ERROR,
 				GatewayCodes.REASON_XML_ERROR);
 			return;							// And quit
 		}
@@ -185,7 +185,7 @@ public class GatewayResponse
 		responseNode = document.SelectSingleNode(
 			DOCUMENT_BASE);
 		if (responseNode == null) {			// Missing document?
-			SetResults(GatewayCodes.RESPONSE_SYSTEM_ERROR,
+			SetResults(GatewayCodes.RESPONSE_REQUEST_ERROR,
 				GatewayCodes.REASON_XML_ERROR);
 			return;					// And we're done
 		}
