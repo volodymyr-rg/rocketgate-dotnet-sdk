@@ -95,11 +95,11 @@ class ThreeDSecureTest : BaseTestCase
 
         request.Set(GatewayRequest.CVV2, "999");
 
-        request.Set(GatewayRequest.REFERENCE_GUID, response.Get(GatewayResponse.TRANSACT_ID));
+        request.Set(GatewayRequest.REFERENCE_GUID, response.Get(GatewayResponse.GUID_NO));
 
         // In a real transaction this would include the PARES returned from the Authentication
         // On dev we send through the SimulatedPARES + TRANSACT_ID
-        string pares = "SimulatedPARES" + response.Get(GatewayResponse.TRANSACT_ID);
+        string pares = "SimulatedPARES" + response.Get(GatewayResponse.GUID_NO);
         request.Set(GatewayRequest.PARES, pares);
 
         // Risk/Scrub Request Setting

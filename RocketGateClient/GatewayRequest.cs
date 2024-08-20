@@ -274,6 +274,8 @@ public class GatewayRequest
 	public static readonly string ACCT_COMPROMISED_SCRUB = "AcctCompromisedScrub";
 	public static readonly string ACCOUNT_HOLDER = "accountHolder";
 	public static readonly string ACCOUNT_NO = "accountNo";
+    public static readonly string BANK_CITY = "bankCity";
+    public static readonly string BANK_NAME = "bankName";
 	public static readonly string AMOUNT = "amount";
 	public static readonly string AFFILIATE = "affiliate";
 	public static readonly string AVS_CHECK = "avsCheck";
@@ -302,6 +304,7 @@ public class GatewayRequest
 	public static readonly string CUSTOMER_PHONE_NO = "customerPhoneNo";
 	public static readonly string CVV2 = "cvv2";
 	public static readonly string CVV2_CHECK = "cvv2Check";
+	public static readonly string COF_FRAMEWORK = "cofFramework";
 	public static readonly string EMAIL = "email";
 	public static readonly string EXPIRE_MONTH = "expireMonth";
 	public static readonly string EXPIRE_YEAR= "expireYear";
@@ -312,11 +315,14 @@ public class GatewayRequest
 	public static readonly string MERCHANT_ACCOUNT = "merchantAccount";
 	public static readonly string MERCHANT_CUSTOMER_ID = "merchantCustomerID";
 	public static readonly string MERCHANT_DESCRIPTOR = "merchantDescriptor";
+	public static readonly string MERCHANT_DESCRIPTOR_TRIAL = "merchantDescriptorTrial";
+	public static readonly string MERCHANT_DESCRIPTOR_CITY = "merchantDescriptorCity";
 	public static readonly string MERCHANT_INVOICE_ID = "merchantInvoiceID";
 	public static readonly string MERCHANT_ID = "merchantID";
 	public static readonly string MERCHANT_PASSWORD = "merchantPassword";
 	public static readonly string MERCHANT_PRODUCT_ID = "merchantProductID";
 	public static readonly string MERCHANT_SITE_ID = "merchantSiteID";
+	public static readonly string PREFERRED_MERCHANT_ACCOUNT = "preferredMerchantAccount";
 	public static readonly string OMIT_RECEIPT = "omitReceipt";
 	public static readonly string PARES = "PARES";
 	public static readonly string PARTIAL_AUTH_FLAG = "partialAuthFlag";
@@ -330,11 +336,15 @@ public class GatewayRequest
 	public static readonly string REBILL_START = "rebillStart";
 	public static readonly string REBILL_SUSPEND = "rebillSuspend";
 	public static readonly string REBILL_RESUME = "rebillResume";
+	public static readonly string REBILL_RESCHEDULE = "REBILLRESCHEDULE";
+	public static readonly string REBILL_REACTIVATE = "REBILLREACTIVATE";
+	public static readonly string REBILL_TRANS_NUMBER = "rebillTransNumber";
 	public static readonly string REFERENCE_GUID = "referenceGUID";
 	public static readonly string REFERRAL_NO = "referralNo";
 	public static readonly string REFERRING_MERCHANT_ID = "referringMerchantID";
 	public static readonly string REFERRED_CUSTOMER_ID = "referredCustomerID";
 	public static readonly string ROUTING_NO = "routingNo";
+	public static readonly string REFERRER_URL = "referrerURL";
 	public static readonly string SAVINGS_ACCOUNT = "savingsAccount";
 	public static readonly string TRANSACT_ID = REFERENCE_GUID;
 	public static readonly string SCRUB = "scrub";
@@ -366,6 +376,9 @@ public class GatewayRequest
 	public static readonly string _3DSECURE_DF_REFERENCE_ID = "_3DSECURE_DF_REFERENCE_ID";
 	public static readonly string _3DSECURE_REDIRECT_URL = "_3DSECURE_REDIRECT_URL";
 	public static readonly string _3DSECURE_CHALLENGE_MANDATED_INDICATOR = "_3DSECURE_CHALLENGE_MANDATED_INDICATOR";
+	public static readonly string _3DSECURE_LOOKUP_CHALLENGE_INDICATOR = "_3DSECURE_LOOKUP_CHALLENGE_INDICATOR";
+	public static readonly string _3DSECURE_ACS_WINDOW_SIZE = "_3DSECURE_ACS_WINDOW_SIZE";
+	public static readonly string GOOGLE_PAY_TOKEN = "GOOGLEPAYTOKEN";
 		
 	public static readonly string BROWSER_JAVA_ENABLED = "BROWSERJAVAENABLED";
 	public static readonly string BROWSER_LANGUAGE = "BROWSERLANGUAGE";
@@ -400,6 +413,7 @@ public class GatewayRequest
 	public static readonly string GATEWAY_SERVLET = "gatewayServlet";
 	public static readonly string GATEWAY_CONNECT_TIMEOUT = "gatewayConnectTimeout";
 	public static readonly string GATEWAY_READ_TIMEOUT = "gatewayReadTimeout";
+	public static readonly string GATEWAY_URL = "gatewayURL";
 
 //////////////////////////////////////////////////////////////////////
 //
@@ -416,5 +430,36 @@ public class GatewayRequest
 	public static readonly string TRANSACTION_TICKET = "TICKET";
 	public static readonly string TRANSACTION_VOID = "VOID";
 
-	public static readonly string XSELL_REFERENCE_XACT = "XSELLREFERENCEXACT";
+	public static readonly string EMBEDDED_FIELDS_TOKEN = "embeddedFieldsToken";
+
+    public static readonly string XSELL_MERCHANT_ACCOUNT = "xsellMerchantAccount";
+    public static readonly string XSELL_MERCHANT_ID = "xsellMerchantID";
+    public static readonly string XSELL_CUSTOMER_ID = "xsellCustomerID";
+	public static readonly string XSELL_REFERENCE_XACT = "xsellReferenceXact";
+
+	public static readonly string FAILURE_URL = "FAILUREURL";
+	public static readonly string SUCCESS_URL = "SUCCESSURL";
+
+	public static readonly string PROCESSOR_3DS = "PROCESSOR3DS";
+
+	public static readonly string MERCHANT_CASCADED_AUTH = "MERCHANTCASCADEDAUTH";
+
+	public static readonly string REFERENCE_SCHEME_TRANSACTION_ID = "SCHEMETRANID";
+    public static readonly string REFERENCE_SCHEME_SETTLEMENT_DATE = "SCHEMESETTLEDATE";
+
+    public static readonly string STYLE_SHEET = "style";
+    public static readonly string STYLE_SHEET2 = "style2";
+    public static readonly string STYLE_SHEET3 = "style3";
+    public static readonly string TRANSLATIONS = "translations";
+    public static readonly string PIN_FLAG = "pinFlag";
+    public static readonly string PIN_NO = "pinNo";
+    public static readonly string LANGUAGE_CODE = "languageCode";
+    public static readonly string TRANSACTION_PIN_DATA = "PINDATA";
+    public static readonly string LANGUAGE = "LANGUAGE";
+    public static readonly string SHOW_PAYMENT_FORM = "SHOW_PAYMENT_FORM";
+
+    public static readonly string ALLOW_CARD_DEBIT_CREDIT = "ALLOW_CARD_DEBIT_CREDIT";
+    public static readonly string ONCLICK_LOGO_URL = "onClickLogoURL";
+    public static readonly string PAYMENT_LINK_TOKEN = "PAYMENTLINKTOKEN";
+    public static readonly string USE_PRIMARY_SCHEMEID = "usePrimarySchemeID";
 }
