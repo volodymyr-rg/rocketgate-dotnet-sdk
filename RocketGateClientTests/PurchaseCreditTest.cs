@@ -54,12 +54,6 @@ class PurchaseCreditTest : BaseTestCase
         request.Set(GatewayRequest.AVS_CHECK, "IGNORE");
 
 //
-//  Setup test parameters in the service and
-//  request.
-//
-        service.SetTestMode(true);
-
-//
 //	Perform the Purchase transaction.
 //
         Assert.That(

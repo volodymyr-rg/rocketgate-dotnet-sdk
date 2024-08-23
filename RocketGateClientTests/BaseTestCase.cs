@@ -4,46 +4,16 @@ namespace RocketGateClientTests;
 
 abstract class BaseTestCase
 {
-    /**
-     * @var GatewayService
-     */
     protected GatewayService service;
-
-    /**
-     * @var GatewayRequest
-     */
     protected GatewayRequest request;
-
-    /**
-     * @var GatewayResponse
-     */
     protected GatewayResponse response;
-
-    /**
-     * @var int
-     */
     protected int merchantId = 1;
-
-    /**
-     * @var string
-     */
     protected string merchantPassword = "testpassword";
-
-    /**
-     * @var string
-     */
     protected string customerId;
-
-    /**
-     * @var string
-     */
     protected string invoiceId;
 
     protected BaseTestCase()
     {
-        // parent::setUp();
-
-        // service  = new GatewayService(true);
         service = new GatewayService();
         service.SetTestMode(true);
         response = new GatewayResponse();

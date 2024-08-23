@@ -1,6 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <PackageId>RocketGateClient</PackageId>
+    <Version>N6.0</Version>
+    <Authors>RocketGate</Authors>
+    <Company>RocketGate</Company>
+    <Product>RocketGateClient</Product>
+    <PackageProjectUrl>https://github.com/rocketgate/rocketgate-dotnet-sdk</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/rocketgate/rocketgate-dotnet-sdk.git</RepositoryUrl>
+
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>disable</Nullable>

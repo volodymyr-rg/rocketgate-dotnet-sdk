@@ -55,12 +55,7 @@ class UploadTest : BaseTestCase
         request.Set(GatewayRequest.BILLING_COUNTRY, "US");
 
 //
-//	Setup test parameters in the service
-//
-        service.SetTestMode(true);
-
-//
-//	Perform the Purchase transaction.
+//	Perform the card upload.
 //
         Assert.That(
             service.PerformCardUpload(request, response), Is.True,
